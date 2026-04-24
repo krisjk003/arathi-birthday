@@ -146,7 +146,7 @@ export default function ArathibirthdaySite() {
   const storyRefs = useRef([]);
   const audioRef = useRef(null);
 
-  const MESSAGE = `Dear Arathi,\n\nI hope this little world makes you smile — even just for a moment.\nYou have this rare, beautiful energy that lights up everything around you. Your laughter is contagious, your kindness is real, and the way you show up for the people you love? It's something truly special.\n\nOn your birthday, I just want you to know: you are so deeply appreciated. Not for what you do or what you achieve — but simply for being you.\n\nHere's to another year of your magic, your growth, and all the happiness you deserve. 💖\n\nHappy Birthday, Arathi. 🎂✨`;
+  const MESSAGE = `Dear Arathi,\n\nI hope this little world makes you smile — even just for a moment.\nYou have this rare, beautiful energy that lights up everything around you. Your laughter is contagious, your kindness is real, and the way you show up for the people you love? It's something truly special.\n\nOn your birthday, I just want you to know: you are so deeply appreciated. Not for what you do or what you achieve — but simply for being you.\n\nUfff… looks like I have to deal with you for one more year 😌 I guess I’ll survive… but you owe me 1lakh🗿 gpay ayith mathi, anyways 💖\n\nHappy Birthday, Arathi. 🎂✨`;
 
   useEffect(() => {
     if (screen !== "main") return;
