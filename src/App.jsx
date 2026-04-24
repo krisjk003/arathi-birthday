@@ -204,6 +204,14 @@ export default function ArathibirthdaySite() {
 
   return (
     <div style={{ fontFamily: "'Georgia', serif", minHeight: "100vh", overflowX: "hidden" }}>
+    
+     {/* 🎶 Background Music */}
+    <audio ref={audioRef} loop>
+      <source src="/music/bg.mp3" type="audio/mpeg" />
+    </audio> 
+
+
+
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Quicksand:wght@300;400;500;600&display=swap');
         *{box-sizing:border-box;margin:0;padding:0;}
@@ -398,7 +406,16 @@ export default function ArathibirthdaySite() {
                 animation: "fadeSlideUp 1s 1.4s both, pulse 2s 2.5s ease-in-out infinite",
                 boxShadow: "0 8px 32px rgba(244,114,182,0.4), 0 0 60px rgba(244,114,182,0.2)",
                 letterSpacing: "0.05em",
+                
               }}
+              onClick={() => {
+    setScreen("main");
+
+    if (audioRef.current) {
+      audioRef.current.volume = 0.25;
+      audioRef.current.play().catch(() => {});
+    }
+  }}
             >
               Tap to Enter 🌷
             </button>
@@ -878,7 +895,7 @@ export default function ArathibirthdaySite() {
                   animation: "fadeIn 2s both",
                 }}
               >
-                Made with love…
+                Made with React.js🗿😂…
               </p>
               <h2
                 style={{
